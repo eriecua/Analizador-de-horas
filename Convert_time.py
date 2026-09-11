@@ -1,8 +1,9 @@
-print("------------------------------------------")
-print("Option (1): Hours Converted")
-print("Option (2): Minutes Converted")
-print("Option (3): Exit")
-print("------------------------------------------")
+def mostrar_menu():
+    print("------------------------------------------")
+    print("Option (1): Hours Converted")
+    print("Option (2): Minutes Converted")
+    print("Option (3): Exit")
+    print("------------------------------------------")
 while True:
     options = int(input("Chose your option: "))
     if options == 1:
