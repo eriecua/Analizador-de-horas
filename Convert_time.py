@@ -1,9 +1,8 @@
-def mostrar_menu():
-    print("------------------------------------------")
-    print("Option (1): Hours Converted")
-    print("Option (2): Minutes Converted")
-    print("Option (3): Exit")
-    print("------------------------------------------")
+print("------------------------------------------")
+print("Option (1): Hours Converted")
+print("Option (2): Minutes Converted")
+print("Option (3): Exit")
+print("------------------------------------------")
 while True:
     options = int(input("Chose your option: "))
     if options == 1:
@@ -28,11 +27,9 @@ while True:
                 break            
             count += 1
             minutes += number
-            if number == 0:
-                break
-        inter, decimal  = divmod((minutes/60), 1)
+        entero, decimal  = divmod((minutes/60), 1)
         print("------------------------------------------")
-        print(f"Total Time: {int(inter)} hours and {int(round((decimal * 60)))} minutes.")
+        print(f"Total Time: {int(entero)} hours and {int(round((decimal * 60)))} minutes.")
         print("------------------------------------------")
         print(f"You type {count} numbers")
     elif options == 3:
@@ -40,6 +37,3 @@ while True:
         break
     else:
         print("Invalid option. Please, try again")
-
-
-
